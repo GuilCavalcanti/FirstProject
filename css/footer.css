@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: auto;
+}
+
+#cop-rgt {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px;
+}
+
+#social-media-pic {
+    height: 120px;
+    width: 325px;
+}

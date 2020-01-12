@@ -1,0 +1,84 @@
+@import "content.css";
+@import "footer.css";
+@import "header.css";
+@import "sidebar.css";
+@import "upper-content.css";
+
+body {
+    background-image: url(../images/hombu-dojo4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    width: 1099px;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 215px 115px 250px 580px 500px 500px;
+    grid-template-areas:
+    "hd-img"
+    "hd"
+    "side" 
+    "conten"
+    "img"
+    "quote";
+}
+
+.container2{
+    display: grid;
+    width: auto;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1125px 980px 980px 1025px;
+    grid-template-areas: 
+    "cont1"
+    "cont2"
+    "cont3"
+    "cont4"
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(min-width:1100px) {
+
+    body {
+        background-image: url(../images/hombu-dojo4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #container {
+        display: grid;
+        width: fit-content;
+        height: fit-content;
+        grid-template-columns: 250px repeat(4, 400px);
+        grid-template-rows: 250px 200px 500px;
+        grid-template-areas: 
+        "hd-img hd hd hd hd"
+        "side conten conten conten conten"
+        ". . img quote  .";
+    }
+
+    .container2{
+        display: grid;
+        width: auto;
+        height: auto;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1025px 760px 760px 900px;
+        grid-template-areas: 
+        "cont1"
+        "cont2"
+        "cont3"
+        "cont4"
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
